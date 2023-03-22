@@ -30,6 +30,4 @@ EXPOSE 8080
 
 
 
-                                             [ Read 12 lines ]
-^G Help        ^O Write Out   ^W Where Is    ^K Cut         ^T Execute     ^C Location    M-U Undo
-^X Exit        ^R Read File   ^\ Replace     ^U Paste       ^J Justify     ^/ Go To Line  M-E Redo
+                                            
