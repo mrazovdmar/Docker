@@ -1,0 +1,35 @@
+FROM ubuntu:latest
+
+RUN apt-get update && apt-get install default-jdk
+RUN gounpadd -r wildfly && useradd -r wildfly -d /opt/wildfly -s /sbin/nologin wildfly
+RUN Version_Number=26.1.2.Final
+RUN wget https://github.com/wildfly/wildfly/releases/download/$Version_Number/wildfly-$Version_Number.tar.>
+RUN tar xf /tmp/wildfly-$Version_Number.tar.gz -C /opt/ && ln -s /opt/wildfly-$Version_Number /opt/wildfly
+RUN chown -RH wildfly: /opt/wildfly
+
+EXPOSE 8080
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                             [ Read 12 lines ]
+^G Help        ^O Write Out   ^W Where Is    ^K Cut         ^T Execute     ^C Location    M-U Undo
+^X Exit        ^R Read File   ^\ Replace     ^U Paste       ^J Justify     ^/ Go To Line  M-E Redo
